@@ -1,0 +1,209 @@
+/*
+    Luis Cortez
+    September 13, 2026
+    Module 6.3 Assignment
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FAF9F6;
+    color: #333333;
+}
+
+header {
+    background-color: #556B5D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.site-name {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F5F0E6;
+    border-bottom: 2px solid #B8755B;
+}
+
+main {
+    min-height: 75vh;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 8%;
+    background-color: #F5F0E6;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.welcome {
+    color: #B8755B;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    color: #556B5D;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #333333;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #B8755B;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.hero-image-placeholder {
+    width: 35%;
+    min-height: 260px;
+    background-color: #A8B5A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #333333;
+}
+
+.highlights {
+    display: flex;
+    gap: 30px;
+    padding: 35px 8%;
+}
+
+.highlight-card {
+    flex: 1;
+    border-top: 3px solid #A8B5A2;
+    padding-top: 15px;
+}
+
+.highlight-card:nth-child(2) {
+    border-top-color: #B8755B;
+}
+
+.page-heading {
+    background-color: #F5F0E6;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.page-heading h1 {
+    margin: 0;
+}
+
+.about-grid,
+.hobbies-grid {
+    display: flex;
+    gap: 30px;
+    padding: 35px 8%;
+}
+
+.about-card,
+.hobby-card {
+    flex: 1;
+}
+
+.image-placeholder {
+    min-height: 180px;
+    background-color: #A8B5A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.future-section {
+    display: flex;
+    gap: 40px;
+    padding: 30px 8%;
+    background-color: #A8B5A2;
+}
+
+.future-section > div {
+    flex: 1;
+}
+
+blockquote {
+    flex: 1;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.life-section {
+    margin: 0 8% 35px;
+    padding: 20px;
+    background-color: #F5F0E6;
+    border-left: 5px solid #B8755B;
+}
+
+footer {
+    background-color: #556B5D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 800px) {
+    header,
+    .hero,
+    .page-heading,
+    .about-grid,
+    .hobbies-grid,
+    .future-section,
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text,
+    .hero-image-placeholder {
+        width: 100%;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
